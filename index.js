@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var server = require('http').createServer(app)
-var io = require('../..')(server)
+var io = require('socket.io')(server)
 var port = process.env.PORT || 3000
 
 server.listen(port, function () {
@@ -14,7 +14,7 @@ var usernames = {}
 var numUsers = 0
 
 io.on('connection', function (socket) {
-  var addedUser = false;
+  var addedUser = false
 
   socket.on('new message', function (data) {
     socket.broadcast.emit('new message', {
@@ -52,7 +52,7 @@ io.on('connection', function (socket) {
   socket.on('disconnect', function () {
     if (addedUser) {
       delete usernames[socket.username]
-      --numUsers;
+      --numUsers
 
       socket.broadcast.emit('user left', {
         username: socket.username,
