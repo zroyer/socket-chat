@@ -2,6 +2,10 @@
 A simple chat application built with socket.io and Express.
 Based on the Socket.IO Chat demo.
 
+## Preview
+
+![alt tag](https://github.com/zroyer/socket-chat/blob/master/preview.gif)
+
 ## Setup
 
 Navigate to your socket-chat directory and install all packages:
