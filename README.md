@@ -1,5 +1,6 @@
 # Socket Chat
-A simple chat application built with socket.io and Express
+A simple chat application built with socket.io and Express.
+Based on the Socket.IO Chat demo.
 
 ## Setup
 
