@@ -25,9 +25,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = ''
     if (data.numUsers === 1) {
-      message += "there is currently 1 participant"
+      message += "You are currently the only participant"
     } else {
-      message += "there are currently " + data.numUsers + " participants"
+      message += "There are currently " + data.numUsers + " participants"
     }
     log(message);
   }
@@ -190,7 +190,7 @@ $(function() {
 
  socket.on('login', function (data) {
     connected = true
-    var message = "Welcome to Socket.IO Chat – "
+    var message = "Welcome to Socket Chat"
     log(message, {
       prepend: true
     });
