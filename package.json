@@ -1,0 +1,12 @@
+{
+  "name": "socket-chat",
+  "version": "0.0.0",
+  "description": "A simple chat application built with socket.io and Express",
+  "main": "index.js",
+  "author": "github.com/zroyer",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "express": "3.4.8"
+  }
+}
