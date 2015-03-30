@@ -1,4 +1,4 @@
-# socket-chat
+# Socket Chat
 A simple chat application built with socket.io and Express
 
 ## Setup
