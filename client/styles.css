@@ -103,6 +103,14 @@ ul {
   padding-bottom: 60px;
 }
 
+.chats img {
+  float: right;
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  display: inline;
+}
+
 .messages {
   height: 100%;
   margin: 0;
